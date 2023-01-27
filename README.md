@@ -1,4 +1,5 @@
 # Seazone Data Science Project
+
 <img src="images_readme/seazone.png">
 
 ## O projeto
