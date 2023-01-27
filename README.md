@@ -1,6 +1,4 @@
-# Seazone Data Science Project
-
-<img src="images_readme/seazone.png">
+# Seazone Data Science Project 
 
 ## O projeto
 
