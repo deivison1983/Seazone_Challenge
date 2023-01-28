@@ -1,4 +1,4 @@
-# Seazone Data Science Project 
+# Seazone Data Science Project
 
 ## O projeto
 
@@ -51,8 +51,7 @@ Ative o ambiente virtual conforme o seu sistema operacional.
 No terminal atualize o gerenciador de pacotes pip do python.
 pip install --upgrade pip
 
-Instalar todas as bibliotecas do projeto conforme arquivo requirements.txt .
-pip install -r requirements.txt
+Instalar todas as bibliotecas do projeto conforme arquivo requirements.txt. No terminal digite: pip install -r requirements.txt .
 
 ## 3.0 Executando os scripts do pipeline de dados.
 
@@ -86,7 +85,7 @@ Project
     ├── references         <- Escopo do projeto, informações fornecidas e complementares
     │
     ├── reports            <- Relatório final do projeto
-    │   └── figures        <- Figures used to analyze and create the report.
+    │   └──                <- .
     │
     ├── requirements.txt   <- Requisitos python e bibliotecas do projeto.
     │
@@ -148,27 +147,12 @@ Neste projeto foi desenvolvido um pipeline de dados completo em Python à partir
         <img height="64px" src="https://seaborn.pydata.org/_static/logo-wide-lightbg.svg">
       </td>
       <td width="25%" align="center">
-        <span>scikit-learn</span><br><br>
-        <img height="64px" src="https://scikit-learn.org/stable/_images/scikit-learn-logo-notext.png">
-      </td>
-      <td width="25%" align="center">
-        <span>XGBoost</span><br><br>
-        <img height="64px" src="https://raw.githubusercontent.com/dmlc/dmlc.github.io/master/img/logo-m/xgboost.png">
-      </td>
-    <tr valign="top">
-    </tr>
-    <tr valign="top">
-    <td width="25%" align="center">
-        <span>CatBoost</span><br><br>
-        <img height="64px" src="	https://upload.wikimedia.org/wikipedia/commons/thumb/c/cc/CatBoostLogo.png/120px-CatBoostLogo.png">
+        <span>streamlit</span><br><br>
+        <img height="64px" src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/77/Streamlit-logo-primary-colormark-darktext.png/800px-Streamlit-logo-primary-colormark-darktext.png?20211125125719">
       </td>
       <td width="25%" align="center">
         <span>Jupyter</span><br><br>
         <img height="64px" src="https://jupyter.org/assets/logos/rectanglelogo-greytext-orangebody-greymoons.svg">
-      </td>
-      <td width="25%" align="center">
-        <span>LGBM</span><br><br>
-        <img height="64px" src="https://lightgbm.readthedocs.io/en/v3.3.2/_images/LightGBM_logo_black_text.svg">
       </td>
     </tr>
   </tbody>
@@ -213,16 +197,17 @@ A seção "Data Overwiew" apresenta um abordagem geral sobre as informações co
 
 Ressalta-se que foi possível responder as seguintes perguntas de negócio abaixo:
 
-1. Qual o melhor perfil de imóvel para investir na cidade?
-* O melhor perfil consiste em apartamentos com 3 quartos, 2 banheiros e com garagem
+**1. Qual o melhor perfil de imóvel para investir na cidade?**
 
-2. Qual é a melhor localização na cidade em termos de receita?
-* Imóveis localizados no bairro Centro de Itapema possuem a melhor localização em termos de receita.
+O melhor perfil consiste em apartamentos com 3 quartos, 2 banheiros e com garagem
 
-3. Quais são as características e razões para as melhores receitas da cidade?
-* Imóveis localizados no bairro Centro de Itapema possuem maiores faturamentos anual por imóvel, por anúncio e por diárias consolidadas.Além disso, a tarifa diária média mensal ao longo do ano foi a maior entre os bairros.
-* Em termos de faturamento anual bruto, os 291 imóveis ficaram na segunda posição em volume.
-* O terceiro quartil dos imóveis localizados no Centro contemplam o perfil de apartamentos com 3 quartos, 2 banheiros e com garagem.
+**2. Qual é a melhor localização na cidade em termos de receita?**
+
+Imóveis localizados no bairro Centro de Itapema possuem a melhor localização em termos de receita.
+
+**3. Quais são as características e razões para as melhores receitas da cidade?**
+
+Imóveis localizados no bairro Centro de Itapema possuem maiores faturamentos anual por imóvel, por anúncio e por diárias consolidadas. Além disso, a tarifa diária média mensal ao longo do ano foi a maior entre os bairros. Em termos de faturamento anual bruto, os 291 imóveis ficaram na segunda posição em volume. O terceiro quartil dos imóveis localizados no Centro contemplam o perfil de apartamentos com 3 quartos, 2 banheiros e com garagem.
 
 
 ## 7. Conclusão do projeto
@@ -231,7 +216,9 @@ Após todo o desenvolvimento desse primeiro ciclo desse projeto (CRISP-DM), o pr
 
 ## 8. Feedback sobre o desafio.
 
-O desafio proposto foi muito bem elaborado tendo em vistas os seus objetivos conforme descrito no item 1. Destaca-se que o dataset "Price_AV_Itapema.csv" possui mais de 43 milhões linhas e onze variáveis distintas sendo o seu tamanho próximo aos 5 Giga Bytes, o que demanda maiores atenções nas etapas de carregamento, limpeza e manipulação dos dados. Salienta-se que algumas variáveis do dataset "Details_Data.csv" ofereceram um desafio a mais nas etapas de limpeza e manipulação de strings devido o agrupamento de muitas informações coletadas por meio de web scraping nos sites Airbnb e Viva Real. Os datasets "Price_AV_Itapema.csv" e "Details_Data.csv" não possuem identificadas as importantes variáveis de localização "bairro" e "município". A identificação foi realizada por meio das coordenadas de latitude e longitude fornecidas no dataset "Mesh_Ids_Data_Itapema.csv", o que demandou a utilização da biblioteca Nominatim do Python para obtenção das informações. Essa biblioteca faz o processo de identificação das coordenadas via requisição em API o que necessita de alguns minutos até a completa identificação dos bairros e cidades de todos os imóveis. O planejamento e elaboração do pipeline de dados tornou o desafio bastante interessante, pois para a construção da análise de negócio e econômica é necessário consolidar as informações das diferentes fontes de dados.
+O desafio proposto foi muito bem elaborado tendo em vistas os seus objetivos conforme descrito no item 1. Destaca-se que o dataset "Price_AV_Itapema.csv" possui mais de 43 milhões linhas e onze variáveis distintas sendo o seu tamanho próximo aos 5 Giga Bytes, o que demanda maiores atenções nas etapas de carregamento, limpeza e manipulação dos dados. Salienta-se que algumas variáveis do dataset "Details_Data.csv" ofereceram um desafio a mais nas etapas de limpeza e manipulação de strings devido o agrupamento de muitas informações coletadas por meio de web scraping nos sites Airbnb e Viva Real. 
+
+Os datasets "Price_AV_Itapema.csv" e "Details_Data.csv" não possuem identificadas as importantes variáveis de localização "bairro" e "município". A identificação foi realizada por meio das coordenadas de latitude e longitude fornecidas no dataset "Mesh_Ids_Data_Itapema.csv", o que demandou a utilização da biblioteca Nominatim do Python para obtenção das informações. Essa biblioteca faz o processo de identificação das coordenadas via requisição em API o que necessita de alguns minutos até a completa identificação dos bairros e cidades de todos os imóveis. O planejamento e elaboração do pipeline de dados tornou o desafio bastante interessante, pois para a construção da análise de negócio e econômica é necessário consolidar as informações das diferentes fontes de dados.
 
 
 ## 9. Próximos passos
